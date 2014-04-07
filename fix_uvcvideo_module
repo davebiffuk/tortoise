@@ -1,0 +1,4 @@
+#!/bin/bash
+# runs at reboot to ensure module is loaded with correct parameters
+sudo rmmod uvcvideo
+sudo modprobe uvcvideo nodrop=1 timeout=5000 quirks=0x80

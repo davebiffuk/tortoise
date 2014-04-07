@@ -1,0 +1,5 @@
+# m h  dom mon dow   command
+*/5 * * * * /home/pi/tortoise/update_rrd.py ; /home/pi/tortoise/graph.py
+* * * * * /home/pi/tortoise/do_webcam
+@reboot /home/pi/tortoise/fix_uvcvideo_module
+@reboot sudo /home/pi/tortoise/lcd_temps.py

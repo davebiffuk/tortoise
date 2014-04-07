@@ -1,0 +1,8 @@
+#!/bin/bash
+# run with -e so that if fswebcam crashes, the script exist and
+# the old image is left in place
+set -e
+cd /var/www/temps
+export TZ=Europe/London
+/usr/bin/fswebcam -v -r 640x480 webcam-new.jpg >/dev/null 2>&1
+mv webcam-new.jpg webcam.jpg
