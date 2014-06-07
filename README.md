@@ -16,9 +16,12 @@ result at http://tortoise.biff.org.uk
 Notes
 -----
 
-BRANCH=next firmware may be necessary; see:
+BRANCH=next firmware used to be necessary; see:
 https://github.com/raspberrypi/linux/issues/470 and
 https://github.com/raspberrypi/linux/issues/552
+but the important USB fix should now be in the main kernel (so do
+"sudo rpi-update"):
+https://github.com/raspberrypi/linux/issues/548#issuecomment-42947030
 
 Beware of the GPIO pin changes between revision 1 and revision 2
 Raspberry Pi boards! These scripts are for r2.
