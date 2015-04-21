@@ -29,7 +29,9 @@ sudo apt-get install apache2 fswebcam python-rrdtool
 To get the 1-wire/GPIO interface working, recent Raspbian images might
 need
 
-```dtoverlay=w1-gpio,gpiopin=4```
+```
+dtoverlay=w1-gpio,gpiopin=4
+```
 
 adding to `/boot/config.txt`
 
