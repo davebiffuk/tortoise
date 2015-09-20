@@ -7,11 +7,10 @@ result at http://tortoise.biff.org.uk
 * create_rrd.py - create empty RRD database files
 * crontab - entries to run regular tasks
 * do_webcam - grab a webcam image and put it into the web directory
-* fix_uvcvideo_module - ensure video module correctly set up
-* graph.py - update RRD graphs
-* lcd_temps.py - main script; polls sensors and updates display
+* fix_uvcvideo_module - ensure video module is correctly set up
+* graph.py - poll sensors, update RRD files and update RRD graphs
+* lcd_temps.py - main script; poll sensors and update display
 * message2.py - LCD display library from Matt Hawkins
-* update_rrd.py - polls sensors and updates RRD files
 
 Notes
 -----
@@ -45,4 +44,4 @@ https://github.com/raspberrypi/linux/issues/548#issuecomment-42947030
 To do
 -----
 
-* refactor the code duplication between lcd_temps.py and update_rrd.py
+* ~~refactor the code duplication between lcd_temps.py and update_rrd.py~~
