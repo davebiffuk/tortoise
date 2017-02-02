@@ -63,7 +63,7 @@ def read_sensor(sensor):
 
 def network_on():
     try:
-        response=urllib2.urlopen('http://10.0.0.4',timeout=1)
+        response=urllib2.urlopen('http://192.168.1.13',timeout=1)
         return True
     except:
         print "network problem?", sys.exc_info()[0]
@@ -110,6 +110,6 @@ while True:
 		lcd_byte(LCD_LINE_2, LCD_CMD)
 		lcd_string(t)
 		time.sleep(10)
-	if(not gotnet):
-		call("/bin/sync")
-		call("/usr/bin/sudo /sbin/reboot -f")
+#	if(not gotnet):
+#		call("/bin/sync")
+#		call("/usr/bin/sudo /sbin/reboot -f")
