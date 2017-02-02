@@ -1,5 +1,5 @@
 #!/bin/bash
-# run with -e so that if fswebcam crashes, the script exist and
+# run with -e so that if fswebcam crashes, the script exits and
 # the old image is left in place
 set -e
 cd /var/www/temps
